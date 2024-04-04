@@ -8,8 +8,33 @@
     <link href=”https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
 </head>
 <body>
-    <h1>Weenie Hut Jr. Membership Sign Up</h1>
-    <h3>Perks of membership included: unlimited access to all Weenie Hut Jr. (Must show Membership ID to enter) and free goodies!</h3>
+  <!-- Header -->
+  <nav class="navbar bg-light navbar-light navbar-expand-sm sticky-top">
+    <p class="navbar-brand ps-3">Weenie Hut Jr. Membership Sign Up</p>
+    <ul class="navbar-nav">
+      <li class="navitem">
+        <a
+          class="nav-link"
+          href="https://github.com/cBuf0rd/Hotel-potential-system"
+          target="_blank"
+          >Repo</a
+        >
+      </li>
+      <li class="navitem">
+        <a
+          class="nav-link"
+          href="https://codepen.io/barrycumbie/pen/abyVxmV"
+          target="_blank"
+          >Validity</a
+        >
+      </li>
+      <li class="navitem">
+        <button id="btnLoadData" class="btn btn-secondary">load json</button>
+      </li>
+    </ul>
+  </nav>
+    <!-- form where buttons and checklist and stuff is at -->
+    
     <form>
       <div class="form-row">
         <div class="col-md-4 mb-3">
@@ -69,32 +94,36 @@
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
-              Diamond Membership
+              Patrick Star
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
-              Priemum Membership
+              SpongeBob Squarepants
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
             <label class="form-check-label" for="exampleRadios3">
-              Platninum Membership
+              Squidward Tentacles
             </label>
           </div>
-          <label>Select BirthDate: </label> 
-          <div id="datepicker" 
-          class="input-group date" 
-          data-date-format="mm-dd-yyyy"> 
-         <input class="form-control" 
-                type="text" readonly /> 
-         <span class="input-group-addon"> 
-             <i class="glyphicon glyphicon-calendar"></i> 
-         </span> 
-     </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="dropdown">
+          Membership: <select name="membership" id="membership">
+            <option value="" selected="selected">Select membership</option>
+          </select>
+          <br><br>
+          Membership Level: <select name="memLevel" id="memLevel">
+            <option value="" selected="selected">Please select membership first</option>
+          </select>
+          <br><br>
+          Price: <select name="price" id="price">
+            <option value="" selected="selected">Please select membership level first</option>
+          </select>
+          <br><br>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
 
 
