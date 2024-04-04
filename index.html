@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Weenie Hut Jr.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./styles/style.css">
+    <link href=”https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css” rel=”stylesheet” type=”text/css” />
+</head>
+<body>
+    <h1>Weenie Hut Jr. Membership Sign Up</h1>
+    <h3>Perks of membership included: unlimited access to all Weenie Hut Jr. (Must show Membership ID to enter) and free goodies!</h3>
+    <form>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="First name"  required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault02">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name"  required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefaultUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault03">City</label>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault04">State</label>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault05">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+        </div>
+      </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Super Weenie</label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Mega Weenie</label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">No Weenie (no entry)</label>
+          </div>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Diamond Membership
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Priemum Membership
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" >
+            <label class="form-check-label" for="exampleRadios3">
+              Platninum Membership
+            </label>
+          </div>
+          <label>Select BirthDate: </label> 
+          <div id="datepicker" 
+          class="input-group date" 
+          data-date-format="mm-dd-yyyy"> 
+         <input class="form-control" 
+                type="text" readonly /> 
+         <span class="input-group-addon"> 
+             <i class="glyphicon glyphicon-calendar"></i> 
+         </span> 
+     </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js'></script><script  src="./scripts/script.js"></script>
+<script src=”https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js” integrity=”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q” crossorigin=”anonymous”></script>
+<script src=”https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js” integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl” crossorigin=”anonymous”></script>
+</body>
+</html>
