@@ -1,3 +1,4 @@
+//*************************membership drop downs*********************************************
 var membershipObject = {
     "Diamond": {
         "Platnium": ["$50000.99", "$500000.99", "$5000000.99"],
@@ -35,6 +36,29 @@ var membershipObject = {
       }
     }
   }
-  $submit.onclick = function(){
-    console.log("Thank you for your information! Welcome to the cult I mean club");
-  };
+
+
+  
+//**************************load data into input fields*********************************************
+$('#btnLoadData').click(function () {
+  console.log("clicked");
+
+  let jsonURL = "https://cBuf0rd.github.io/Hotel-potential-system/hotel.json";
+
+  $.getJSON(jsonURL, function(data){
+    //logs entire data object
+    console.log(data);
+
+    // load data into input fields
+    $("#firstName").val(data.firstName);
+    $("#lastName").val(data.lastName);
+    $("#age").val(data.age);
+    $("#zipCode").val(data.zipCode);
+  })
+  .fail(function(jqXHR, textStatus, errorThrown){
+    console.log("Error: ", errorThrown);
+ 
+  });
+});
+
+
